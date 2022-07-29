@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+padding: 0;
+}
+.full_sidebar{
+    width: 325px;
+    max-width: 325px;
+    padding: 50px;
+    position: fixed;
+    height: 100%;
+}
+.post_icon{
+    padding: 20px;
+    background-color: #084D6A;
+    border-radius: 50px;
+}
+.seeker{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.post_text{
+    color: white;
+}
+.explore{
+    display: flex;
+    padding-top: 20px;
+}
+.explore_text{
+    color: #084D6A;
+}
+.settings{
+    display: flex;
+    padding-top: 20px;
+}
+.settings_text{
+    color: #084D6A;
+}
+.material_top{
+    position: fixed;
+}
+.material_down{
+    position: fixed;
+    bottom: 50px;
+    background-color: #084D6A;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.name_bigbox{
+    padding: 5px;
+    background-color: #0B7AAA;
+    border-radius: 50px;
+}
+.name_container{
+    color: white;
+}
+.tag_container{
+    color: white;
+    padding-top: 15px;
+}
