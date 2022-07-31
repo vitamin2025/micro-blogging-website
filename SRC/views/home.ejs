@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+
+<div class="topnav">
+    <a id="homeNav" class="active" href="/"><i class="fas fa-blog"></i> Post it</a>
+    <a href="/users/newblog">New Post</a>
+    <a id="signinLink" href="/users/login">Sign in</a>
+</div>
+
+<% let x = Math.floor((Math.random() * 10)); %>
+
+<div class="regisbtnDiv">
+    <a class="registerBtn" href="/users/register">Get started</a><br>
+    Already have an account? <a href="/users/login">Sign in.</a>
+</div>
+<br>
+<hr><br>
+<br>
+<hr><br>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Post_It</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400&family=Splash&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<!--&lt;!&ndash; Side Navigation Section &ndash;&gt;-->
+<!--<div id="mySidenav" class="sidenav">-->
+<!--    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+<!--    <a href="/dashboard">All</a>-->
+<!--    <a href="/dashboard/technology">Technology</a>-->
+<!--    <a href="/dashboard/health">Health</a>-->
+<!--    <a href="/dashboard/business">Business</a>-->
+<!--    <a href="/dashboard/food">Food</a>-->
+<!--    <a href="/dashboard/culture">Culture</a>-->
+<!--    <a href="/dashboard/travel">Travel</a>-->
+<!--    <a href="/dashboard/videogames">Video Games</a>-->
+<!--    <a href="/dashboard/science">Science</a>-->
+<!--    <a href="/dashboard/relationships">Relationships</a>-->
+<!--    <a href="/dashboard/politics">Politics</a>-->
+<!--</div>-->
+
+<!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>-->
+
+
+<div class="full_sidebar">
+    <div class="material_top">
+        <div class="post_icon">
+            <div class="seeker">
+                <img class="logo1" src="../public/images/SeekPng1.png" alt="">
+                <h2 class="post_text">Post-It</h2>
+            </div>
+        </div>
+        <div class="explore">
+            <img class="logo2" src="../public/images/compass.png" alt="">
+            <h2 class="explore_text">Explore</h2>
+        </div>
+        <div class="settings">
+            <img class="logo3" src="../public/images/settings.png" alt="">
+            <h2 class="settings_text">Settings</h2>
+        </div>
+    </div>
+    <div class="material_down">
+        <div class="name_bigbox">
+            <img class="placehold_image" src="../public/images/P1120783.JPG" alt="img not available">
+            <div class="name_container">
+                <!-- Flash Message -->
+                <% if (message && message.length > 0) { %>
+                    <div id="flashDiv" class="flash welcome">
+                        <%= message %>
+                    </div>
+                <% } %>
+                <% if (message2 && message2.length > 0) { %>
+                    <div id="flashDiv" class="flash welcome">
+                        <%= message2 %>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+        <div class="tag_container">
+            @Ranadheer123
+            <br><a id="signinLink" href="/logout">Log out</a>
+        </div>
+    </div>
+</div>
+<!-- sidebar by Ranadheer -->
+
+<!-- Center --- Blogs -->
+
+<div class="main">
+    <div class="rec8">
+        <div class="p1 ellipse">
+            <a href="/users/newblog">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                     class="bi bi-pencil-square"
+                     viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd"
+                          d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                </svg>
+            </a>
+
+            <form action="/users/newblog" method="POST">
+                <div class="container1">
+                    <h1>New Blog</h1>
+                    <label for="inputTitle"><strong>Title*</strong></label>
+                    <input id="inputTitle" type="text" name="title" placeholder="Title">
+                    <label for="inputImg"><strong>Image URL</strong></label>
+                    <input id="inputImg" type="text" name="img" placeholder="Image Url">
+                    <label for="inputText"><strong>Text*</strong></label>
+                    <textarea id="inputText" name="text" rows="10"></textarea>
+                    <label for="inputCat"><strong>Category* </strong></label>
+                    <select id="inputCat" name="category">
+                        <option value="Technology">Technology</option>
+                        <option value="Health">Health</option>
+                        <option value="Business">Business</option>
+                        <option value="Food">Food</option>
+                        <option value="Culture">Culture</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Video Games">VideoGames</option>
+                        <option value="Science">Science</option>
+                        <option value="Relationships">Relationships</option>
+                        <option value="Politics">Politics</option>
+                    </select>
+                    <button class="lrform-btn" type="submit">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Type box-->
+
+
+    <div>
+
+        <% if (blogs.length == 0) { %>
+            <h1 id="noBlogH1">Sorry!! No Blogs Found!!</h1>
+        <% } else { %>
+        <div class="container">
+            <% blogs.forEach(function(blog){ %>
+                <div class="rec7">
+                    <div class="p1 ellipse">
+                        <div style="text-align:left;">Posted By <%= blog.author %> </div>
+
+                        <h2 style="text-align:center"><%= blog.title %></h2>
+                        <img class="image" src="<%= blog.imgURL %>"><br>
+
+                        <div class="p2"><%= blog.blogText.substring(0, 100) %></div>
+
+                        <!--                        <span id="author-span">By  on <%= blog.dateofPublish %></span>-->
+                        <!--                        <span id="category-span">Category: <%= blog.category %></span>-->
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8%" height="8%" fill="currentColor"
+                             class="bi bi-heart"
+                             viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="7.5%" height="7.5%" fill="currentColor"
+                             class="bi bi-chat-left" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        </svg>
+
+                    </div>
+
+
+                </div>
+
+            <% }); %>
+
+            <% } %>
+        </div>
+    </div>
+</div>
+
+
+<!-- JS Scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="scripts/dashboard.js"></script>
+
+<%- include("partials/footer") %>
