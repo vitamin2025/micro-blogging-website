@@ -1,0 +1,22 @@
+body {
+  background-color: #0b7aaa;
+}
+
+.vector1 {
+  width: 100%;
+  height: 47%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.image1 {
+  position : fixed;
+  right : 50px;
+  bottom: 50px;
+  border-radius: 0px;
+  width: 40%;
+  height: 55%;
+}
