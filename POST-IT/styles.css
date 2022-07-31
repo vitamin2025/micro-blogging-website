@@ -1,0 +1,79 @@
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #0b7aaa;
+}
+
+.vector1 {
+  width: 100%;
+  height: 47%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.image1 {
+  position : fixed;
+  right : 50px;
+  bottom: 50px;
+  border-radius: 0px;
+  width: 40%;
+  height: 55%;
+}
+
+.postit{
+  display: flex;
+  position: fixed;
+  left:110px;
+  top: 20px;
+  width: 80%;
+  justify-content: space-between;
+  
+}
+.title{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.title>img{
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+}
+.titleText{
+  color: #ffffff;
+  font-size: 45px;
+}
+
+.content{
+  width: 260px;
+}
+
+.desc{
+  font-size: 20px;
+  color:#ffffff;
+}
+
+.login{
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.login>p{
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 24px;
+  
+}
+
+.login>p::hover{
+  cursor: pointer;
+  
+}
