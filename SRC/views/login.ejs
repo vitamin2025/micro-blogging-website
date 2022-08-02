@@ -1,10 +1,20 @@
-<%- include("partials/header") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/stylesheets/userforms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400&family=Splash&display=swap"
+          rel="stylesheet">
+</head>
+<body>
 
-<div class="topnav">
-    <a id="homeNav" class="active" href="/"><i class="fas fa-blog"></i> Post it</a>
-    <a href="/users/newblog">New Post</a>
-    <a id="signinLink" href="/users/register">Sign up</a>
-</div>
 
 <!-- Flash Message -->
 <% if (message && message.length > 0) { %>
@@ -13,23 +23,47 @@
     </div>
 <% } %>
 
-<div class="formDivLr">
-    <form class="lrform" action="/users/login" method="post">
-        <div class="container1">
-            <h1>Login</h1>
-            <label for="inputEmail"><b>Username</b></label>
-            <input id="inputEmail" type="email" placeholder="Enter Username" name="email" required>
-            <label for="inputPassword"><b>Password</b></label>
-            <input id="inputPassword" type="password" placeholder="Enter Password" name="password" required>
-            <button class="lrform-btn" type="submit">Login</button>
-        </div>
-        <div class="container1">
-            <a href="/">
-                <button type="button" class="cancelbtn">Cancel</button>
-            </a>
-            <span class="lowerText">Doesn't have an account? <a href="/users/register">Sign up.</a></span>
-        </div>
+<!-- Login Form -->
+<div class="container">
+    <div class="form">
+        <form action="/users/login" method="post">
+            <div class="login_name">
+                Login
+            </div>
+            <div class="username_area">
+                <div class="username">
+                    username
+                </div>
+                <input id="inputEmail" type="email" placeholder="Enter Username" name="email" required>
+            </div>
+            <br>
+            <br>
+            <div class="password_area">
+                <div class="password">
+                    Password
+                </div>
+                <input id="inputPassword" type="password" placeholder="Enter Password" name="password" required>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="button">
+                <button class="login_btn" type="submit">Login</button>
+            </div>
+
+
+    </div>
     </form>
+
+    <div class="extra_button">
+        <br>
+        Don't have an account?
+        <br>
+        <a href="/users/register">
+            <button class="login_btn">Register</button>
+        </a>
+    </div>
 </div>
+
 
 <%- include("partials/footer") %>

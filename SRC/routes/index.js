@@ -28,19 +28,21 @@ router.get('/dashboard', (req, res) => {
         res.status(401).redirect('/users/login');
     }
 });
-router.get('/dashboard', (req, res) => {
-    mySqlConnection.query("SELECT * FROM users", function (err, users, fields) {
-        if (err) console.log(err);
-        res.status(200).render('dashboard', {
-            users: users,
-            message: req.flash('welcome'),
-            message2: req.flash('userMsg')
-        });
-        return res.render("dashboard.ejs", {
-            user: req.user
-        });
-    });
-});
+// router.get('/dashboard', (req, res) => {
+//     if (req.session.user) {
+//         // Select all blogs and print them:
+//         mySqlConnection.query("SELECT * FROM users", function (err, users, fields) {
+//             if (err) console.log(err);
+//             res.status(200).render('dashboard', {
+//                 users: users,
+//                 message: req.flash('welcome'),
+//                 message2: req.flash('newuserMsg')
+//             });
+//         });
+//     } else {
+//         res.status(401).redirect('/users/login');
+//     }
+// });
 
 router.get('/dashboard/:category', (req, res) => {
     if (req.session.user) {

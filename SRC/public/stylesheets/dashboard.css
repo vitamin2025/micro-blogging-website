@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
 }
 
 body {
@@ -80,7 +81,7 @@ body {
     padding-left: 20px;
 }
 
-.logo1 {
+.logo1, .r_logo1 {
     height: 23px;
     padding-right: 10px;
     margin-top: 4px;
@@ -104,60 +105,57 @@ body {
     cursor: pointer;
 }
 
-/* Sidebar */
+/* Left Sidebar by Ranadheer*/
 
 
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
-.bi-pin-angle-fill {
-    top: 21%;
-    left: 10%;
+.bi-pin-angle-fill{
+    top:21%;
+    left:10%;
     color: white;
     position: absolute;
-    width: 40px;
-    height: 40px;
+width: 40px;
+height: 40px;
 
-    background: url(SeekPng.png);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+background: url(SeekPng.png);
+transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-
-.bi-compass {
-    top: 21%;
-    left: 10%;
+.bi-compass{
+    top:21%;
+    left:10%;
     color: black;
     position: absolute;
-    width: 33px;
-    height: 33px;
+width: 33px;
+height: 33px;
 }
 
 
-.bi-gear-fill {
-    top: 21%;
-    left: 10%;
+.bi-gear-fill{
+    top:21%;
+    left:10%;
     color: black;
     position: absolute;
-    width: 33px;
-    height: 33px;
+width: 33px;
+height: 33px;
 
 }
-
-.dp {
-    padding-top: 5%;
-    padding-left: 5%;
+.dp{
+    padding-top:5%;
+    padding-left:5%;
     width: 30%;
     height: 70%;
     border-radius: 50%;
 
 }
-
-.name {
+.name{
     position: absolute;
     bottom: 5%;
-    left: 2%;
-    width: 12%;
-    color: white;
+    left:2%;
+    width:12%;
+    color:white;
     font-size: 20px;
     font-weight: 400;
     font-family: 'Trebuchet MS', sans-serif;
@@ -169,7 +167,7 @@ body {
     padding-right: 30px;
 }
 
-.box-2 {
+.box-2{
     position: absolute;
     width: 33.3%;
     height: 100%;
@@ -179,7 +177,7 @@ body {
     border: 2px solid gray;
 }
 
-.add-post {
+.add-post{
     width: 95%;
     background-color: #084D6A;
     height: 200px;
@@ -192,8 +190,7 @@ body {
     font-size: 18px;
     margin-bottom: 5px;
 }
-
-.dp1 {
+.dp1{
     width: 35px;
     height: 35px;
     background-color: gray;
@@ -203,12 +200,18 @@ body {
     margin-right: 5px;
     margin-top: 10px;
 }
-
-.add {
+.add{
     margin: 0;
 }
-
-.userlp1 {
+.bi-pencil-square{
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 40px;
+    height: 30px;
+}
+.userlp1{
     width: 35px;
     height: 35px;
     background-color: gray;
@@ -218,8 +221,7 @@ body {
     margin-right: 5px;
     margin-top: 10px;
 }
-
-.post1 {
+.post1{
     width: 95%;
     background-color: #0B7AAA;
     height: 200px;
@@ -232,13 +234,15 @@ body {
     font-size: 18px;
     margin-bottom: 5px;
 }
-
-.bi-chat-square {
+.bi-chat-square{
     position: absolute;
     right: 5px;
 }
-
-.post2 {
+.bi-heart{
+    position: absolute;
+    right: 30px;
+}
+.post2{
     width: 95%;
     background-color: #0B7AAA;
     height: 270px;
@@ -250,15 +254,13 @@ body {
     font-weight: 400;
     font-size: 18px;
 }
-
-.p2-img {
+.p2-img{
     width: 100%;
     height: 170px;
     border-radius: 20px;
     padding-top: 5px;
 }
-
-.box-3 {
+.box-3{
     width: 33.3%;
     position: absolute;
     border: 2px solid gray;
@@ -267,102 +269,269 @@ body {
     border-radius: 16px;
 }
 
-.bi-search {
+.bi-search{
     margin-right: 5px;
 }
-
-.trending {
+.trending{
     color: #0B7AAA;
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: 400;
     font-size: 22px;
     margin-left: 5px;
 }
-
-.bi-lightning-charge {
+.bi-lightning-charge{
     color: #084D6A;
     font-weight: 400;
     transform: rotate(300);
 }
-
-.main {
-    margin-left: 340px;
+rec8{
+height: 46%;
+width: 43%;
+left: 22%;
+right: 30%;
+top: 5%;
+align-items: center;
+border-radius: 20px;
+position: absolute;
+background: #084D6A;
 }
-
-.rec8 {
-    height: 200px;
-    width: 550px;
+rec7{
+    height: 40%;
+    width: 43%;
+    left: 22%;
+    right: 30%;
+    top: 54%;
     align-items: center;
     border-radius: 20px;
-    background: #084D6A;
+    position: absolute;
+    background:#0B7AAA;
 }
-
-.rec7 {
-    height: 300px;
-    width: 550px;
-    align-items: center;
-    border-radius: 20px;
-    background: #0B7AAA;
-}
-
-.ellipse {
-    margin-top: 5px;
-    margin-left: 5px;
+ellipse{
+    position: absolute;
+    top:8%;
+    left:4%;
     border-radius: 50%;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 100%;
-    color: #FFFFFF;
+width: 50px;
+height: 50px;
+
+font-family: 'Trebuchet MS', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 100%;
+color: #FFFFFF;
 
 }
-
-.bi-pencil-square {
-    color: #FFFFFF;
-    top: 10%;
-    width: 30;
-    height: 30;
-    right: 5%;
-    border: 2px;
+.bi-pencil-square{
+color:#FFFFFF;
+position: absolute;
+top: 10%;
+width: 30;
+height: 30;
+right: 5%;
+border: 2px ;
 }
 
-.bi-heart {
-    color: #FFFFFF;
+.bi-heart{
+    color:#FFFFFF;
+    position: absolute;
     bottom: 10%;
     right: 10%;
-    border: 2px;
+    border: 2px ;
+    }
+
+    .bi-chat-left{
+        color:#FFFFFF;
+        position: absolute;
+        bottom: 10%;
+        right: 2%;
+        border: 2px ;
+        }
+
+.p1{
+font-family:'Trebuchet MS', sans-serif;;
+font-style: normal;
+font-weight: 400;
+font-size: 100%;
+color: #FFFFFF;
 }
 
-.bi-chat-left {
-    color: #FFFFFF;
-    bottom: 10%;
-    right: 2%;
-    border: 2px;
-}
-
-.p1 {
-    font-family: 'Trebuchet MS', sans-serif;;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 100%;
-    color: #FFFFFF;
-}
-
-.p2 {
+.p2{
     padding-top: 10%;
     padding-left: 18%;
-    padding-right: 5%;
+    padding-right:5%;
     font-family: 'Trebuchet MS', sans-serif;
     font-style: normal;
     align-items: center;
     font-size: 100%;
     color: #FFFFFF;
+    } */
+
+/* Middle Part by Shivaji and Hemanth*/
+
+
+.middle {
+    position: absolute;
+    left: 325px;
+    width: 750px;
 }
 
-.image {
-    width: 200px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.box_1 {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #084D6A;
+    border-radius: 50px;
+    height: 350px;
 }
+
+.min_box_1 {
+    display: flex;
+}
+
+.pic_total {
+    display: flex;
+}
+
+.profile_pic {
+    padding-left: 15px;
+}
+
+.box_2 {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #0B7AAA;
+    border-radius: 50px;
+    height: 255px;
+}
+
+.random_info {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.like_comm {
+    padding-top: 30px;
+    display: flex;
+    padding-left: 600px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    padding-left: 500px;
+}
+
+.like_btn {
+    margin-right: 20px;
+    height: 25px;
+    width: 25px;
+}
+
+.like_btn:checked::after {
+    content: url(exp/afterlike.png);
+}
+
+.comment_btn {
+    margin-right: 20px;
+    height: 25px;
+    width: 25px;
+}
+
+.namebox {
+    padding-top: 15px;
+}
+
+.like_btn:hover, .comment_btn:hover, .material-symbols-outlined:hover {
+    cursor: pointer;
+}
+
+/* Middle part by Ranadheer, Shivaji and Hemanth*/
+
+
+.right_sidebar {
+    padding: 50px;
+    position: fixed;
+    right: 0%;
+    /* background-color: black; for reference only*/
+    height: 100%;
+    width: 450px;
+}
+
+.search {
+    display: flex;
+    align-self: center;
+    justify-content: left;
+    padding-left: 15px;
+}
+
+.search_text {
+    color: #FFFFFF;
+}
+
+.search_bar {
+    padding: 20px;
+    background-color: #084D6A;
+    border-radius: 50px;
+    width: 350px;
+}
+
+.trending {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.trending_text {
+    color: #0B7AAA;
+    font-size: 35px;
+}
+
+.r_material_down {
+    padding-top: 50px;
+    position: fixed;
+}
+
+.r_placehold_image {
+    border-radius: 50px;
+    right: 70px;
+    width: 310px;
+    height: 130px;
+}
+
+.bigbox {
+    position: fixed;
+    background-color: #084D6A;
+    width: 350px;
+    height: 220px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.one_text {
+    padding-bottom: 15px;
+    padding-left: 10px;
+    color: #FFFFFF;
+}
+
+.r_logo1 {
+    height: 23px;
+    padding-right: 10px;
+    margin-top: 4px;
+}
+
+.r_logo2 {
+    margin: 12px;
+    width: 25px;
+    height: 25px;
+}
+
+/*.image {*/
+/*    right: 70px;*/
+/*    width: 310px;*/
+/*    height: 130px;*/
+/*}*/
+
+/* Right Sidebar by Ranadheer */
+
+
