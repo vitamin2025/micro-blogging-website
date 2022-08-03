@@ -25,6 +25,10 @@ body {
     width: 200px;
 }
 
+.post_icon > a:link {
+    text-decoration: none;
+}
+
 .seeker {
     display: flex;
     align-self: center;
@@ -72,7 +76,8 @@ body {
 
 .name_container {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
+
 }
 
 .tag_container {
@@ -414,12 +419,15 @@ color: #FFFFFF;
     padding-left: 600px;
 }
 
-.material-symbols-outlined {
-    font-variation-settings: 'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48;
-    padding-left: 500px;
+.material-symbols-outlined, .edit_square {
+    /*font-variation-settings: 'FILL' 0,*/
+    /*'wght' 400,*/
+    /*'GRAD' 0,*/
+    /*'opsz' 48;*/
+    margin-top: 15px;
+    margin-left: 60%;
+    height: 35px;
+    width: 35px;
 }
 
 .like_btn {
@@ -444,6 +452,44 @@ color: #FFFFFF;
 
 .like_btn:hover, .comment_btn:hover, .material-symbols-outlined:hover {
     cursor: pointer;
+}
+
+.container1 {
+
+}
+
+.post_btn_input {
+    background-color: #f2f2f2;
+    color: black;
+    width: 55px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 0px;
+    margin-left: 85%;
+    margin-top: 15px;
+}
+
+.post_btn_input:hover {
+    cursor: pointer;
+    background-color: #0B7AAA;
+    color: white;
+    border: 0px;
+}
+
+.post_title_input {
+    width: 700px;
+}
+
+.post_text_input {
+    width: 700px;
+    height: 150px;
+    resize: none;
+    background: transparent;
+    border: 0px;
+    margin-top: 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /* Middle part by Ranadheer, Shivaji and Hemanth*/
